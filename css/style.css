@@ -142,7 +142,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	position: absolute;
 	top: 45%;
 	left: 0;
-	width: 2em;
+	width: 1.5em;
 	display: none;
 	transition: left 0.5s;
 	transition: right 0.5s;
@@ -152,7 +152,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	position: absolute;
 	top: 45%;
 	right: 3.5em;
-	width: 2em;
+	width: 1.5em;
 	transition: left 0.5s;
 	transition: right 0.5s;
 }
