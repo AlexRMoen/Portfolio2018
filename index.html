@@ -196,6 +196,8 @@
 				
 				
 			</div>
+			
+			<div style="height: 500vh;"></div>
 				
 		</div>
 
@@ -270,6 +272,11 @@ $('a[href*="#"]')
 		
 $(document).ready(function(){
 	
+			$(window).scroll(function(){
+        $("#aboveTheFoldImg").css("opacity", 1 - $(window).scrollTop() / $('#aboveTheFoldImg').height());
+    });
+	
+			// change highlighted nav option when scrolled to
 			var targetOffset1 = $("#projectsAnchor").offset().top;
 			var targetOffset2 = $("#contactMeAnchor").offset().top;
 
@@ -300,7 +307,7 @@ $(document).ready(function(){
 			
 			var yournewsswitch = 1;
 			
-			<!-- Your News left arrow -->
+			// Your News left arrow
 			$("#yournewsArrowLeft").click(function(){
 						
 						switch(yournewsswitch) {
