@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: black;
+	color: white;
+	overflow-x: hidden;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+
+/* fonts */
+h1 {
+	font-size: 3rem;
+	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+.lato {
+	font-family: 'Lato', sans-serif;
+}
+
+/* overlays */
+.blackOverlay {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+}
+
+/* paddings */
+.paddingTop2em {
+	padding-top: 2em;
+}
+
+/* Main sections of the site */
+.navLabel {
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5rem;
+	padding-right: 1.5em;
+	font-weight: normal;
+}
+
+.navLabelOn {
+	border-right: solid;
+	border-bottom: none;
+	font-weight: bold;
+}
+
+#aboveTheFoldImg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../img/kojiroBG.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#aboveTheFold {
+	height: 100vh;
+}
+
+#aboveTheFoldTitle {
+	position: absolute;
+	bottom: 1em;
+	right: 5em;
+	text-align: right;
+}
+
+.projectSlideSize {
+	width: 100%;
+	height: 70vh;
+	position: relative;
+}
+
+.projectSlide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.projectCoverImage {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.projectTitleAndTagline {
+	position: absolute;
+	bottom: 3em;
+	right: 3.5em;
+	text-align: right;
+}
+
+.projectSlideRight {
+	transform: translateX(100vw);
+	opacity: 0;
+	padding-left: 4em;
+	padding-right: 4em;
+}
+
+.projectSlideText {
+	padding-left: 1em;
+}
+
+.arrowLeft {
+	position: absolute;
+	top: 45%;
+	left: 0;
+	width: 2em;
+	display: none;
+	transition: left 0.5s;
+	transition: right 0.5s;
+}
+
+.arrowRight {
+	position: absolute;
+	top: 45%;
+	right: 3.5em;
+	width: 2em;
+	transition: left 0.5s;
+	transition: right 0.5s;
+}
+
+.arrowLeftColor {
+	fill: white;
+/*	fill:#6B6B6B;*/
+}
+
+.arrowRightColor {
+	fill: white;
+	transition: fill 0.5s;
+}
+
+.positionTabSection {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.positionTab {
+	height:0.5em;
+	width: 0.5em;
+	display: inline-block;
+	margin-right: 0.5em;
+	border: white solid 1px;
+	transition: background-color 0.5s;
+}
+
+/* special rules */
+.relativizer {
+	position: relative;
+}
+
+.centerInRelativeDiv {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.centerVerticallyInRelativeDiv {
+	position: absolute;
+	top: 50%;
+	transform: translatey(-50%);
+}
+
+.imageFit {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.cursor {
+	cursor: pointer;
+}
