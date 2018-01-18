@@ -2,29 +2,29 @@
 /* CSS Document */
 
 body {
-	background-color: black;
-	color: white;
+	background-color: #fdfd04;
+	color: #03c0dd;
 	overflow-x: hidden;
 }
 
 /* unvisited link */
 a:link {
-    color: white;
+    color: #03c0dd;;
 }
 
 /* visited link */
 a:visited {
-    color: white;
+    color: #03c0dd;;
 }
 
 /* mouse over link */
 a:hover {
-    color: white;
+    color: #03c0dd;;
 }
 
 /* selected link */
 a:active {
-    color: white;
+    color: #03c0dd;;
 }
 
 /* fonts */
