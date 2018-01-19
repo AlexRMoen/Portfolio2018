@@ -187,6 +187,113 @@
 					</div>
 			
 				</div>
+			
+									<!-- Kojiro Izakaya project -->
+			<div class="projectSlideSize">
+			
+				<!-- Kojiro Izakaya Slide 1 -->
+				<div id="kojiroSlide1" class="projectSlide cursor">
+
+					<!-- Cover image for project -->
+					<div class="projectCoverImage lazy" data-src="img/kojiroBG.png" id="projectCoverImageKojiro">
+						
+						<!-- Transparent black gradient, makes text legible -->
+						<div class="blackOverlay"></div>
+
+						<!-- Main title and tagline  -->
+						<div class="projectTitleAndTagline">
+							<h2 class="white"><span style="font-weight: 300">kojiro </span><span style="font-weight: 700"> izakaya</span></h2>
+							<span class="lato white">Restaurant Menu App <strong>SFU PROJECT 2015</strong></span>
+						</div>
+
+					</div>
+
+				</div>
+				
+				<!-- Kojiro Izakaya Slide 2 -->
+				
+					<div id="kojiroSlide2" class="projectSlide projectSlideRight">
+
+						<div class="container-fluid" style="height: 100%; width: 100%;">
+							<div class="row" style="height: 100%; width: 100%;">
+								<div class="col-4 relativizer" style="width: 100%;">
+
+									<div class="centerInRelativeDiv" style="width: 100%;">
+									<img class="lazy" data-src="img/enterpriseApp1.png" class="imageFit" width="100%">
+									</div>
+
+								</div>
+								<div class="col relativizer" style="width: 100%;">
+
+									<div class="centerVerticallyInRelativeDiv projectSlideText" style="width: 100%;">
+									<h2><span style="font-weight: 300">your </span><span style="font-weight: 700">news</span></h2>
+									<span class="lato">Xbox One News App <strong>Microsoft Garage Internship 2017</strong></span>
+									<p class="paddingTop2em">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu turpis ut ex eleifend porttitor et vitae libero.</p><p>Cras ullamcorper erat nec eros malesuada, nec rhoncus purus imperdiet.</p>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+					<!-- 'Go back' arrow -->
+					<div class="arrowLeft cursor" id="kojiroArrowLeft">
+
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" viewBox="0 0 120.4 230.9" style="enable-background:new 0 0 120.4 230.9;" xml:space="preserve">
+						<polygon class="arrowLeftColor" points="115.4,230.9 120.4,225.9 9.9,115.4 120.4,5 115.4,0 0,115.4 "/>
+						</svg>
+
+					</div>
+
+					<!-- 'Go forward' arrow -->
+					<div class="arrowRight cursor" id="kojiroArrowRight">
+
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" viewBox="0 0 120.4 230.9" style="enable-background:new 0 0 120.4 230.9;" xml:space="preserve">
+						<polygon id="kojiroRightArrowPolygon" class="arrowRightColor" points="5,230.9 0,225.9 110.5,115.4 0,5 5,0 120.4,115.4 "/>
+						</svg>
+
+					</div>
+					
+					<!-- Position indicator tabs -->
+					<div class="positionTabSection">
+
+						<div class="positionTab" id="kojiroTab1">
+						</div>
+
+						<div class="positionTab positionTabOff" id="kojiroTab2">
+						</div>
+
+						<div class="positionTab positionTabOff" id="kojiroTab3">
+						</div>
+
+						<div class="positionTab positionTabOff" id="kojiroTab4">
+						</div>
+
+						<div class="positionTab positionTabOff" id="kojiroTab5">
+						</div>
+
+						<div class="positionTab positionTabOff" id="kojiroTab6">
+						</div>
+
+						<div class="positionTab positionTabOff" id="kojiroTab7">
+						</div>
+
+						<div class="positionTab positionTabOff" id="kojiroTab8">
+						</div>
+
+						<div class="positionTab positionTabOff" id="kojiroTab9">
+						</div>
+
+						<div class="positionTab positionTabOff" id="kojiroTab10">
+						</div>
+							
+					</div>
+			
+				</div>
+									
+						
 							
 			</div>
 			
@@ -311,7 +418,8 @@ $(document).ready(function(){
 				}
 				
 			});
-			
+	
+			// Your News Left + Right Arrow behavior
 			var yournewsswitch = 1;
 			
 			// Your News left arrow
@@ -470,6 +578,167 @@ $(document).ready(function(){
 						$('body,html').scroll();
 						
 					});
+	
+	
+					// Kojiro Izakaya Left + Right Arrow behavior
+					var kojiroswitch = 1;
+
+					// Kojiro Izakaya left arrow
+					$("#kojiroArrowLeft").click(function(){
+
+								switch(kojiroswitch) {
+
+							case 2:
+							$("#kojiroSlide1").animate({"left":"0", "opacity":"100"}, "slow");
+							$("#kojiroSlide2").animate({"left":"0", "opacity":"0"}, "slow");
+							$("#kojiroArrowRight").css('right', '3.5em');
+							$("#kojiroArrowLeft").fadeOut("slow");
+							$("#kojiroTab1").css('background-color', '#6B6B6B');
+							$("#kojiroTab2").css('background-color', 'transparent');
+							break;
+
+							case 3:
+							$("#kojiroSlide2").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroSlide3").animate({"left":"0", "opacity":"0"}, "slow");
+							$("#kojiroTab2").css('background-color', '#6B6B6B');
+							$("#kojiroTab3").css('background-color', 'transparent');
+							break;
+
+							case 4:
+							$("#kojiroSlide3").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroSlide4").animate({"left":"0", "opacity":"0"}, "slow");
+							$("#kojiroTab3").css('background-color', '#6B6B6B');
+							$("#kojiroTab4").css('background-color', 'transparent');
+							break;
+
+							case 5:
+							$("#kojiroSlide4").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroSlide5").animate({"left":"0", "opacity":"0"}, "slow");
+							$("#kojiroTab4").css('background-color', '#6B6B6B');
+							$("#kojiroTab5").css('background-color', 'transparent');
+							break;
+
+							case 6:
+							$("#kojiroSlide5").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroSlide6").animate({"left":"0", "opacity":"0"}, "slow");
+							$("#kojiroTab5").css('background-color', '#6B6B6B');
+							$("#kojiroTab6").css('background-color', 'transparent');
+							break;
+
+							case 7:
+							$("#kojiroSlide6").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroSlide7").animate({"left":"0", "opacity":"0"}, "slow");
+							$("#kojiroTab6").css('background-color', '#6B6B6B');
+							$("#kojiroTab7").css('background-color', 'transparent');
+							break;
+
+							case 8:
+							$("#kojiroSlide7").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroSlide8").animate({"left":"0", "opacity":"0"}, "slow");
+							$("#kojiroTab7").css('background-color', '#6B6B6B');
+							$("#kojiroTab8").css('background-color', 'transparent');
+							break;
+
+							case 9:
+							$("#kojiroSlide8").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroSlide9").animate({"left":"0", "opacity":"0"}, "slow");
+							$("#kojiroTab8").css('background-color', '#6B6B6B');
+							$("#kojiroTab9").css('background-color', 'transparent');
+							break;
+
+							case 10:
+							$("#kojiroSlide9").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroSlide10").animate({"left":"0", "opacity":"0"}, "slow");
+							$("#kojiroArrowRight").fadeIn("slow");
+							$("#kojiroTab9").css('background-color', '#6B6B6B');
+							$("#kojiroTab10").css('background-color', 'transparent');
+							break;
+
+											}
+
+								kojiroswitch -= 1;
+								$('body,html').scroll();
+
+							});
+
+
+							<!-- Kojiro Izakaya right arrow -->
+							$("#kojiroArrowRight, #kojiroSlide1").click(function(){
+
+								switch(kojiroswitch) {
+
+							case 1:
+							$("#kojiroSlide1").animate({"left":"-100vw", "opacity":"0"}, "slow");
+							$("#kojiroSlide2").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroArrowLeft").fadeIn("slow");	
+							$("#kojiroArrowRight").css('right', '0');
+							$("#kojiroTab1").css('background-color', 'transparent');
+							$("#kojiroTab2").css('background-color', '#6B6B6B');
+							break;
+
+							case 2:
+							$("#kojiroSlide2").animate({"left":"-200vw", "opacity":"0"}, "slow");
+							$("#kojiroSlide3").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroTab2").css('background-color', 'transparent');
+							$("#kojiroTab3").css('background-color', '#6B6B6B');
+							break;
+
+							case 3:
+							$("#kojiroSlide3").animate({"left":"-200vw", "opacity":"0"}, "slow");
+							$("#kojiroSlide4").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroTab3").css('background-color', 'transparent');
+							$("#kojiroTab4").css('background-color', '#6B6B6B');
+							break;
+
+							case 4:
+							$("#kojiroSlide4").animate({"left":"-200vw", "opacity":"0"}, "slow");
+							$("#kojiroSlide5").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroTab4").css('background-color', 'transparent');
+							$("#kojiroTab5").css('background-color', '#6B6B6B');
+							break;
+
+							case 5:
+							$("#kojiroSlide5").animate({"left":"-200vw", "opacity":"0"}, "slow");
+							$("#kojiroSlide6").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroTab5").css('background-color', 'transparent');
+							$("#kojiroTab6").css('background-color', '#6B6B6B');
+							break;
+
+							case 6:
+							$("#kojiroSlide6").animate({"left":"-200vw", "opacity":"0"}, "slow");
+							$("#kojiroSlide7").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroTab6").css('background-color', 'transparent');
+							$("#kojiroTab7").css('background-color', '#6B6B6B');
+							break;
+
+							case 7:
+							$("#kojiroSlide7").animate({"left":"-200vw", "opacity":"0"}, "slow");
+							$("#kojiroSlide8").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroTab7").css('background-color', 'transparent');
+							$("#kojiroTab8").css('background-color', '#6B6B6B');
+							break;
+
+							case 8:
+							$("#kojiroSlide8").animate({"left":"-200vw", "opacity":"0"}, "slow");
+							$("#kojiroSlide9").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroTab8").css('background-color', 'transparent');
+							$("#kojiroTab9").css('background-color', '#6B6B6B');
+							break;
+
+							case 9:
+							$("#kojiroSlide9").animate({"left":"-200vw", "opacity":"0"}, "slow");
+							$("#kojiroSlide10").animate({"left":"-100vw", "opacity":"100"}, "slow");
+							$("#kojiroArrowRight").fadeOut("slow");
+							$("#kojiroTab9").css('background-color', 'transparent');
+							$("#kojiroTab10").css('background-color', '#6B6B6B');
+							break;
+
+											}
+
+								kojiroswitch += 1;
+								$('body,html').scroll();
+
+							});
         
 
 			$('body,html').scroll();
