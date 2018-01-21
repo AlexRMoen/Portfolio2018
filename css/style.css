@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 .lato {
@@ -110,24 +110,30 @@ h2 {
 }
 
 .projectLink {
-	padding-top: 10vh;
-	padding-bottom: 10vh;
-	height: 55vh;
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+	height: 80vh;
 	width: 100%;
-	background-color: aquamarine;
-	padding-left: 12vw;
+	padding-left: 18vw;
 }
 
 .projectLinkTitle {
 	position: absolute;
-	top: 30%;
+	top: 18%;
 	left: 0;
+	max-width: 50%;
+}
+
+.projectLinkSeeMore {
+	position: absolute;
+	bottom: 7%;
+	left: 81%;
 }
 
 .projectLinkImg {
 	position: absolute;
 	top: 0;
-	left: 20%;
+	left: 15%;
 	width: 60%;
 	height: 100%;
 	background-repeat: no-repeat;
