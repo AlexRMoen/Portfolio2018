@@ -35,7 +35,7 @@
 <!-- title cluster in top left corner -->
 <div class="topLeft">
 		
-	<h1>alex <strong>moen</strong></h1>
+	<h1>alex <strong>moen</strong> ux</h1>
 		
 </div>
 
@@ -54,7 +54,7 @@
 	
 	<!-- Your News project link -->
 	<div class="projectLink">
-		<div class="relativizer" style="width: 100%; height: 100%;">
+		<div class="relativizer" style="width: 100%; height: 100%;" id="projectLinkYournews">
 
 			<!-- Your News project link image -->
 			<div class="projectLinkImg" id="projectLinkImgYournews">
@@ -216,6 +216,9 @@
 	
 </div>
 
+<!-- Your News project overlay -->
+<div class="projectOverlay" id="projectOverlayYournews"></div>
+
 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -283,6 +286,12 @@ $('a[href*="#"]')
     <script>
 		
 $(document).ready(function(){
+	
+	$("#projectLinkYournews").click(function(){
+		
+		$("#projectOverlayYournews").fadeIn("slow");
+		
+		});
 	
 	
 			$(window).scroll(function(){
