@@ -57,15 +57,15 @@ h2 {
 /* positions */
 .topLeft {
 	position: fixed;
-	top: 1.25em;
-	left: 2em;
+	top: 1.5em;
+	left: 2.5em;
 }
 
 /* Main sections of the site */
 #navigation {
 	position: fixed;
 	top: 50%;
-	left: 3em;
+	left: 3.5em;
 	transform: rotate(90deg);
 	transform-origin: left top 0;
 }
@@ -112,7 +112,7 @@ h2 {
 .projectLink {
 	padding-top: 10vh;
 	padding-bottom: 10vh;
-	height: 50vh;
+	height: 55vh;
 	width: 100%;
 	background-color: aquamarine;
 	padding-left: 12vw;
@@ -129,6 +129,14 @@ h2 {
 	top: 0;
 	left: 20%;
 	width: 60%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#projectLinkImgYournews {
+	background-image: url(../img/yournewsBG.jpg);
 }
 
 /* special rules */
