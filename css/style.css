@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	background-color: black;
+	background-color:#151515;
 	color: white;
 	overflow-x: hidden;
 }
@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 2.25rem;
 }
 
 .lato {
@@ -114,12 +114,13 @@ h2 {
 	padding-bottom: 20vh;
 	height: 80vh;
 	width: 100%;
-	padding-left: 18vw;
+	padding-left: 18%;
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .projectLinkTitle {
 	position: absolute;
-	top: 18%;
+	top: 20%;
 	left: 0;
 	max-width: 50%;
 }
