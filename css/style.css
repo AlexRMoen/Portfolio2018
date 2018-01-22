@@ -147,6 +147,18 @@ h2 {
 	background-image: url(../img/yournewsBG.jpg);
 }
 
+.greenlightCoverImage {
+	background-image: url(../img/greenlightBG.jpg);
+}
+
+.auroraCoverImage {
+	background-image: url();
+}
+
+.kojiroCoverImage {
+	background-image: url(../img/kojiroBG.png);
+}
+
 .projectOverlay {
 	width: 100%;
 	height: 100%;
