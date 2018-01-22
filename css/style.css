@@ -159,6 +159,14 @@ h2 {
 	background-image: url(../img/kojiroBG.png);
 }
 
+.playboyCoverImage {
+	background-image: url(../img/playboyBG.png);
+}
+
+.enterpriseCoverImage {
+	background-image: url(../img/enterpriseBG.png);
+}
+
 .projectOverlay {
 	width: 100%;
 	height: 100%;
