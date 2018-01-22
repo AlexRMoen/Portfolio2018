@@ -147,21 +147,17 @@ h2 {
 	background-position: center center;
 }
 
-#projectLinkImgYournews {
+.yournewsCoverImage {
 	background-image: url(../img/yournewsBG.jpg);
 }
 
 .projectOverlay {
-	background-color: black;
-	opacity: 0.8;
 	width: 100%;
 	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
-}
-
-#projectOverlayYournews {
+	overflow-y: scroll;
 	display: none;
 }
 
