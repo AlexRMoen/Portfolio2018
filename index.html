@@ -637,6 +637,51 @@ $(document).ready(function(){
 		
 		});
 	
+		// Kojiro Izakaya link
+		$("#projectLinkKojiro").click(function(){
+		
+			$("#projectOverlayKojiro").fadeIn("slow");
+			$("body").css('overflow', 'hidden');
+		
+		});
+	
+		$("#kojiroXClose").click(function(){
+		
+			$("#projectOverlayKojiro").fadeOut("slow");
+			$("body").css('overflow', 'auto');
+		
+		});
+	
+		// Playboy link
+		$("#projectLinkPlayboy").click(function(){
+		
+			$("#projectOverlayPlayboy").fadeIn("slow");
+			$("body").css('overflow', 'hidden');
+		
+		});
+	
+		$("#playboyXClose").click(function(){
+		
+			$("#projectOverlayPlayboy").fadeOut("slow");
+			$("body").css('overflow', 'auto');
+		
+		});
+	
+		// Enterprise link
+		$("#projectLinkEnterprise").click(function(){
+		
+			$("#projectOverlayEnterprise").fadeIn("slow");
+			$("body").css('overflow', 'hidden');
+		
+		});
+	
+		$("#enterpriseXClose").click(function(){
+		
+			$("#projectOverlayEnterprise").fadeOut("slow");
+			$("body").css('overflow', 'auto');
+		
+		});
+	
 	
 			$(window).scroll(function(){
         $("#aboveTheFoldImg").css("opacity", 1 - $(window).scrollTop() / $('#aboveTheFoldImg').height());
