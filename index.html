@@ -79,7 +79,7 @@
 		</div>
 	</div>
 	
-		<!-- Greenlight project link -->
+	<!-- Greenlight project link -->
 	<div class="projectLink">
 		<div class="relativizer" style="width: 100%; height: 100%; cursor: pointer;" id="projectLinkGreenlight">
 
@@ -106,7 +106,7 @@
 		</div>
 	</div>
 	
-		<!-- Aurora Sushi project link -->
+	<!-- Aurora Sushi project link -->
 	<div class="projectLink">
 		<div class="relativizer" style="width: 100%; height: 100%; cursor: pointer;" id="projectLinkAurora">
 
@@ -187,7 +187,7 @@
 		</div>
 	</div>
 	
-		<!-- Enterprise project link -->
+	<!-- Enterprise project link -->
 	<div class="projectLink">
 		<div class="relativizer" style="width: 100%; height: 100%; cursor: pointer;" id="projectLinkEnterprise">
 
@@ -592,6 +592,7 @@
 		
 $(document).ready(function(){
 	
+		// Your News link
 		$("#projectLinkYournews").click(function(){
 		
 			$("#projectOverlayYournews").fadeIn("slow");
@@ -606,7 +607,8 @@ $(document).ready(function(){
 		
 		});
 	
-			$("#projectLinkGreenlight").click(function(){
+		// Greenlight Arcade link
+		$("#projectLinkGreenlight").click(function(){
 		
 			$("#projectOverlayGreenlight").fadeIn("slow");
 			$("body").css('overflow', 'hidden');
@@ -616,6 +618,21 @@ $(document).ready(function(){
 		$("#greenlightXClose").click(function(){
 		
 			$("#projectOverlayGreenlight").fadeOut("slow");
+			$("body").css('overflow', 'auto');
+		
+		});
+	
+		// Aurora Sushi link
+		$("#projectLinkAurora").click(function(){
+		
+			$("#projectOverlayAurora").fadeIn("slow");
+			$("body").css('overflow', 'hidden');
+		
+		});
+	
+		$("#auroraXClose").click(function(){
+		
+			$("#projectOverlayAurora").fadeOut("slow");
 			$("body").css('overflow', 'auto');
 		
 		});
