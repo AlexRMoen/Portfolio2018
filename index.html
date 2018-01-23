@@ -25,7 +25,7 @@
 <div id="topAnchor"></div>
 
 <!-- Cover image above the fold -->
-<div id="aboveTheFoldImg">
+<div class="lazy" data-src="img/kojiroBG.png" id="aboveTheFoldImg">
 	
 	<!-- Black overlay darkening image -->
 	<div class="blackOverlay"></div>
@@ -397,6 +397,14 @@
 			
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet maximus dui. Vivamus imperdiet vel lacus vitae lobortis. Vivamus ipsum dui, convallis eget nibh in, semper pellentesque neque.</p>
 			
+			<img class="lazy imageFit" data-src="img/projects/kojiro/gallery1.png" />
+			<img class="lazy imageFit" data-src="img/projects/kojiro/gallery2b.png" />
+			<img class="lazy imageFit" data-src="img/projects/kojiro/gallery3.png" />
+			<img class="lazy imageFit" data-src="img/projects/kojiro/gallery4.png" />
+			<img class="lazy imageFit" data-src="img/projects/kojiro/gallery5.png" />
+			<img class="lazy imageFit" data-src="img/projects/kojiro/gallery6.png" />
+			<img class="lazy imageFit" data-src="img/projects/kojiro/gallery7.png" />
+			
 			</div>
 
 		</div>
@@ -577,13 +585,12 @@
    
    <!-- jQuery Lazy to fade images in -->
    <script>
-			$(function() {
+	      $(function() {
         $('.lazy').Lazy({
-        effect: "fadeIn",
-          effectTime: 1000,
+          effect: "fadeIn",
+          effectTime: 800,
           threshold: 0
-    });
-				
+        });
     });
 	   </script>
 	   
