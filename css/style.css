@@ -177,6 +177,13 @@ h2 {
 	display: none;
 }
 
+.overlayContainer {
+	margin-top: 6em;
+	margin-bottom: 6em;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
 /* special rules */
 .relativizer {
 	position: relative;
