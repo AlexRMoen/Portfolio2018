@@ -155,26 +155,6 @@ h3 {
 	background-position: center center;
 }
 
-.greenlightCoverImage {
-	background-image: url(../img/greenlightBG.jpg);
-}
-
-.auroraCoverImage {
-	background-image: url();
-}
-
-.kojiroCoverImage {
-	background-image: url(../img/kojiroBG.png);
-}
-
-.playboyCoverImage {
-	background-image: url(../img/playboyBG.png);
-}
-
-.enterpriseCoverImage {
-	background-image: url(../img/enterpriseBG.png);
-}
-
 .projectOverlay {
 	width: 100%;
 	height: 100%;
