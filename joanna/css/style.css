@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* rules */
+
+/* height and width */
+
+.height100vh {
+	height: 100vh;
+}
+
+.width100vw {
+	width: 100vw;
+}
+
+.width100percent {
+	width: 100%;
+}
+
+.height100percent {
+	height: 100%;
+}
+
+/* absolute position */
+
+.absoluteBottom {
+	position: absolute;
+	bottom: 0;
+}
+
+/* paddings */
+
+.paddingTop0point3em {
+	padding-top: 0.2em;
+}
+
+.paddingTop0point5em {
+	padding-top: 0.5em;
+}
+
+.paddingTop0point75em {
+	padding-top: 0.75em;
+}
+
+.paddingBottom3em {
+	padding-bottom: 3em;
+} 
+@media only screen and (max-width : 767px) {
+	.paddingBottom3em {
+	padding-bottom: 2em;
+} 
+}
+.paddingBottom4em {
+	padding-bottom: 4em;
+}
+
+@media only screen and (max-width : 767px) {
+	.paddingBottom4em {
+	padding-bottom: 1.5em;
+}
+}
+
+.paddingRight2point5em {
+	padding-right: 2.5em;
+}
+
+/* margins */
+
+.marginBottom18px {
+	margin-bottom: 18px;
+}
+
+.marginBottom2point5em {
+	margin-bottom: 2.5em;
+}
+
+@media only screen and (max-width : 767px) {
+	.marginBottom2point5em {
+	margin-bottom: 1em;
+}
+}
+
+/* colors */
+
+.white {
+	color: white;
+}
+
+.whiteBGtransparent {
+	background-color: rgba(4, 97, 31, 0.9);
+}
+
+.lightGrey {
+	color: #FFFFFF;
+}
+
+/* gradients */
+.blackGradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.85+100;Neutral+Density */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#d9000000',GradientType=0 ); /* IE6-9 */
+}
+
+/* special cases */
+.registeredPsych {
+	 padding-right: 0.5em;
+}
+.credentials {
+	border-left-color: #FFFFFF;
+	border-left-style: solid;
+	border-left-width: 1px;
+	padding-left: 0.9em;
+}
+@media only screen and (min-width : 768px) {
+	
+.contacts {
+	border-left-color: #FFFFFF;
+	border-left-style: solid;
+	border-left-width: 1px;
+	padding-left: 1.75em;
+	float: right;
+}
+}
+
+/* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 767px) {
+		
+.contacts {
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1px;
+	padding-top: 1.5em;
+	margin-top: 2em;
+}
+		
+    }
+
+/* Rule to make columns of equal height */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
