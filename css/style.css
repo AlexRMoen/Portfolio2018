@@ -116,10 +116,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a151515', e
 }
 
 .topNavBarDark {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#151515+0,151515+100&1+0,0+100 */
-background: -moz-linear-gradient(top, rgba(21,21,21,1) 0%, rgba(21,21,21,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(21,21,21,1) 0%,rgba(21,21,21,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(21,21,21,1) 0%,rgba(21,21,21,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#151515+0,151515+100&1+25,0+100 */
+background: -moz-linear-gradient(top, rgba(21,21,21,1) 0%, rgba(21,21,21,1) 25%, rgba(21,21,21,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(21,21,21,1) 0%,rgba(21,21,21,1) 25%,rgba(21,21,21,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(21,21,21,1) 0%,rgba(21,21,21,1) 25%,rgba(21,21,21,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151515', endColorstr='#00151515',GradientType=0 ); /* IE6-9 */
 }
 
