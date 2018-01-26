@@ -35,7 +35,7 @@
 <!-- title cluster in top left corner -->
 <div class="topLeft">
 		
-	<h1>alex <strong>moen</strong> ux</h1>
+	<a href="#topAnchor"><h1>alex <strong>moen</strong> ux</h1></a>
 		
 </div>
 
@@ -48,11 +48,13 @@
 </div>
 
 <!-- main navigation -->
-<div id="navigation">
+<nav id="navigation">
 		
-	<span class="lato">about projects contact</span>
+	<a href="#aboutMeAnchor"><div class="navLabel" id="navLabelAboutMe">about</div></a>
+	<a href="#projectsAnchor"><div class="navLabel" id="navLabelProjects">projects</div></a>
+	<a href="#contactMeAnchor"><div class="navLabel" id="navLabelContactMe">contact</div></a>
 		
-</div>
+</nav>
 
 <!-- Main tagline -->
 <div id="tagline">
@@ -2053,359 +2055,50 @@ $(document).ready(function(){
 		});
 	
 	
-			$(window).scroll(function(){
-        $("#aboveTheFoldImg").css("opacity", 1 - $(window).scrollTop() / $('#aboveTheFoldImg').height());
-    });
+		// fades out cover image as you scroll past it
+		$(window).scroll(function(){
+        	$("#aboveTheFoldImg").css("opacity", 1 - $(window).scrollTop() / $('#aboveTheFoldImg').height());
+		});
 	
 			// change highlighted nav option when scrolled to
-			var targetOffset1 = $("#projectsAnchor").offset().top;
-			var targetOffset2 = $("#contactMeAnchor").offset().top;
+			// var targetOffset1 = $("#topAnchor").offset().top;
+			var targetOffset2 = $("#aboutMeAnchor").offset().top;
+			var targetOffset3 = $("#projectsAnchor").offset().top;
+			var targetOffset4 = $("#contactMeAnchor").offset().top;
 
 			var $w = $(window).scroll(function(){
 				
-				if ( $w.scrollTop() < targetOffset1 ) {  
+				if ( $w.scrollTop() < targetOffset2 ) {  
 					
-					$("#navLabelHome").addClass("navLabelOn");
+					$("#navLabelAboutMe").removeClass("navLabelOn");
 					$("#navLabelProjects").removeClass("navLabelOn");
 					$("#navLabelContactMe").removeClass("navLabelOn");
 				}
 				
-				if ( $w.scrollTop() >= targetOffset1 && $w.scrollTop() < targetOffset2  ) {  
+				if ( $w.scrollTop() >= targetOffset2 && $w.scrollTop() < targetOffset3  ) {  
 					
-					$("#navLabelHome").removeClass("navLabelOn");
+					$("#navLabelAboutMe").addClass("navLabelOn");
+					$("#navLabelProjects").removeClass("navLabelOn");
+					$("#navLabelContactMe").removeClass("navLabelOn");
+				}
+				
+				if ( $w.scrollTop() >= targetOffset3 && $w.scrollTop() < targetOffset4 ) {  
+					
+					$("#navLabelAboutMe").removeClass("navLabelOn");
 					$("#navLabelProjects").addClass("navLabelOn");
 					$("#navLabelContactMe").removeClass("navLabelOn");
 				}
 				
-				if ( $w.scrollTop() >= targetOffset2 ) {  
+				if ( $w.scrollTop() >= targetOffset4 ) {  
 					
-					$("#navLabelHome").removeClass("navLabelOn");
+					$("#navLabelAboutMe").removeClass("navLabelOn");
 					$("#navLabelProjects").removeClass("navLabelOn");
 					$("#navLabelContactMe").addClass("navLabelOn");
 				}
 				
 			});
 	
-			// Your News Left + Right Arrow behavior
-			var yournewsswitch = 1;
 			
-			// Your News left arrow
-			$("#yournewsArrowLeft").click(function(){
-						
-						switch(yournewsswitch) {
-											
-					case 2:
-					$("#yournewsSlide1").animate({"left":"0", "opacity":"100"}, "slow");
-					$("#yournewsSlide2").animate({"left":"0", "opacity":"0"}, "slow");
-					$("#yournewsArrowRight").css('right', '3.5em');
-					$("#yournewsArrowLeft").fadeOut("slow");
-					$("#yournewsTab1").css('background-color', '#6B6B6B');
-					$("#yournewsTab2").css('background-color', 'transparent');
-					break;
-								
-					case 3:
-					$("#yournewsSlide2").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsSlide3").animate({"left":"0", "opacity":"0"}, "slow");
-					$("#yournewsTab2").css('background-color', '#6B6B6B');
-					$("#yournewsTab3").css('background-color', 'transparent');
-					break;
-								
-					case 4:
-					$("#yournewsSlide3").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsSlide4").animate({"left":"0", "opacity":"0"}, "slow");
-					$("#yournewsTab3").css('background-color', '#6B6B6B');
-					$("#yournewsTab4").css('background-color', 'transparent');
-					break;
-								
-					case 5:
-					$("#yournewsSlide4").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsSlide5").animate({"left":"0", "opacity":"0"}, "slow");
-					$("#yournewsTab4").css('background-color', '#6B6B6B');
-					$("#yournewsTab5").css('background-color', 'transparent');
-					break;
-								
-					case 6:
-					$("#yournewsSlide5").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsSlide6").animate({"left":"0", "opacity":"0"}, "slow");
-					$("#yournewsTab5").css('background-color', '#6B6B6B');
-					$("#yournewsTab6").css('background-color', 'transparent');
-					break;
-								
-					case 7:
-					$("#yournewsSlide6").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsSlide7").animate({"left":"0", "opacity":"0"}, "slow");
-					$("#yournewsTab6").css('background-color', '#6B6B6B');
-					$("#yournewsTab7").css('background-color', 'transparent');
-					break;
-								
-					case 8:
-					$("#yournewsSlide7").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsSlide8").animate({"left":"0", "opacity":"0"}, "slow");
-					$("#yournewsTab7").css('background-color', '#6B6B6B');
-					$("#yournewsTab8").css('background-color', 'transparent');
-					break;
-								
-					case 9:
-					$("#yournewsSlide8").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsSlide9").animate({"left":"0", "opacity":"0"}, "slow");
-					$("#yournewsTab8").css('background-color', '#6B6B6B');
-					$("#yournewsTab9").css('background-color', 'transparent');
-					break;
-								
-					case 10:
-					$("#yournewsSlide9").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsSlide10").animate({"left":"0", "opacity":"0"}, "slow");
-					$("#yournewsArrowRight").fadeIn("slow");
-					$("#yournewsTab9").css('background-color', '#6B6B6B');
-					$("#yournewsTab10").css('background-color', 'transparent');
-					break;
-			
-									}
-						
-						yournewsswitch -= 1;
-						$('body,html').scroll();
-						
-					});
-
-					
-					<!-- Your News right arrow -->
-					$("#yournewsArrowRight, #yournewsSlide1").click(function(){
-						
-						switch(yournewsswitch) {
-						
-					case 1:
-					$("#yournewsSlide1").animate({"left":"-100vw", "opacity":"0"}, "slow");
-					$("#yournewsSlide2").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsArrowLeft").fadeIn("slow");	
-					$("#yournewsArrowRight").css('right', '0');
-					$("#yournewsTab1").css('background-color', 'transparent');
-					$("#yournewsTab2").css('background-color', '#6B6B6B');
-					break;
-											
-					case 2:
-					$("#yournewsSlide2").animate({"left":"-200vw", "opacity":"0"}, "slow");
-					$("#yournewsSlide3").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsTab2").css('background-color', 'transparent');
-					$("#yournewsTab3").css('background-color', '#6B6B6B');
-					break;
-								
-					case 3:
-					$("#yournewsSlide3").animate({"left":"-200vw", "opacity":"0"}, "slow");
-					$("#yournewsSlide4").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsTab3").css('background-color', 'transparent');
-					$("#yournewsTab4").css('background-color', '#6B6B6B');
-					break;
-								
-					case 4:
-					$("#yournewsSlide4").animate({"left":"-200vw", "opacity":"0"}, "slow");
-					$("#yournewsSlide5").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsTab4").css('background-color', 'transparent');
-					$("#yournewsTab5").css('background-color', '#6B6B6B');
-					break;
-								
-					case 5:
-					$("#yournewsSlide5").animate({"left":"-200vw", "opacity":"0"}, "slow");
-					$("#yournewsSlide6").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsTab5").css('background-color', 'transparent');
-					$("#yournewsTab6").css('background-color', '#6B6B6B');
-					break;
-								
-					case 6:
-					$("#yournewsSlide6").animate({"left":"-200vw", "opacity":"0"}, "slow");
-					$("#yournewsSlide7").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsTab6").css('background-color', 'transparent');
-					$("#yournewsTab7").css('background-color', '#6B6B6B');
-					break;
-								
-					case 7:
-					$("#yournewsSlide7").animate({"left":"-200vw", "opacity":"0"}, "slow");
-					$("#yournewsSlide8").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsTab7").css('background-color', 'transparent');
-					$("#yournewsTab8").css('background-color', '#6B6B6B');
-					break;
-								
-					case 8:
-					$("#yournewsSlide8").animate({"left":"-200vw", "opacity":"0"}, "slow");
-					$("#yournewsSlide9").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsTab8").css('background-color', 'transparent');
-					$("#yournewsTab9").css('background-color', '#6B6B6B');
-					break;
-								
-					case 9:
-					$("#yournewsSlide9").animate({"left":"-200vw", "opacity":"0"}, "slow");
-					$("#yournewsSlide10").animate({"left":"-100vw", "opacity":"100"}, "slow");
-					$("#yournewsArrowRight").fadeOut("slow");
-					$("#yournewsTab9").css('background-color', 'transparent');
-					$("#yournewsTab10").css('background-color', '#6B6B6B');
-					break;
-			
-									}
-						
-						yournewsswitch += 1;
-						$('body,html').scroll();
-						
-					});
-	
-	
-					// Kojiro Izakaya Left + Right Arrow behavior
-					var kojiroswitch = 1;
-
-					// Kojiro Izakaya left arrow
-					$("#kojiroArrowLeft").click(function(){
-
-								switch(kojiroswitch) {
-
-							case 2:
-							$("#kojiroSlide1").animate({"left":"0", "opacity":"100"}, "slow");
-							$("#kojiroSlide2").animate({"left":"0", "opacity":"0"}, "slow");
-							$("#kojiroArrowRight").css('right', '3.5em');
-							$("#kojiroArrowLeft").fadeOut("slow");
-							$("#kojiroTab1").css('background-color', '#6B6B6B');
-							$("#kojiroTab2").css('background-color', 'transparent');
-							break;
-
-							case 3:
-							$("#kojiroSlide2").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroSlide3").animate({"left":"0", "opacity":"0"}, "slow");
-							$("#kojiroTab2").css('background-color', '#6B6B6B');
-							$("#kojiroTab3").css('background-color', 'transparent');
-							break;
-
-							case 4:
-							$("#kojiroSlide3").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroSlide4").animate({"left":"0", "opacity":"0"}, "slow");
-							$("#kojiroTab3").css('background-color', '#6B6B6B');
-							$("#kojiroTab4").css('background-color', 'transparent');
-							break;
-
-							case 5:
-							$("#kojiroSlide4").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroSlide5").animate({"left":"0", "opacity":"0"}, "slow");
-							$("#kojiroTab4").css('background-color', '#6B6B6B');
-							$("#kojiroTab5").css('background-color', 'transparent');
-							break;
-
-							case 6:
-							$("#kojiroSlide5").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroSlide6").animate({"left":"0", "opacity":"0"}, "slow");
-							$("#kojiroTab5").css('background-color', '#6B6B6B');
-							$("#kojiroTab6").css('background-color', 'transparent');
-							break;
-
-							case 7:
-							$("#kojiroSlide6").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroSlide7").animate({"left":"0", "opacity":"0"}, "slow");
-							$("#kojiroTab6").css('background-color', '#6B6B6B');
-							$("#kojiroTab7").css('background-color', 'transparent');
-							break;
-
-							case 8:
-							$("#kojiroSlide7").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroSlide8").animate({"left":"0", "opacity":"0"}, "slow");
-							$("#kojiroTab7").css('background-color', '#6B6B6B');
-							$("#kojiroTab8").css('background-color', 'transparent');
-							break;
-
-							case 9:
-							$("#kojiroSlide8").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroSlide9").animate({"left":"0", "opacity":"0"}, "slow");
-							$("#kojiroTab8").css('background-color', '#6B6B6B');
-							$("#kojiroTab9").css('background-color', 'transparent');
-							break;
-
-							case 10:
-							$("#kojiroSlide9").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroSlide10").animate({"left":"0", "opacity":"0"}, "slow");
-							$("#kojiroArrowRight").fadeIn("slow");
-							$("#kojiroTab9").css('background-color', '#6B6B6B');
-							$("#kojiroTab10").css('background-color', 'transparent');
-							break;
-
-											}
-
-								kojiroswitch -= 1;
-								$('body,html').scroll();
-
-							});
-
-
-							<!-- Kojiro Izakaya right arrow -->
-							$("#kojiroArrowRight, #kojiroSlide1").click(function(){
-
-								switch(kojiroswitch) {
-
-							case 1:
-							$("#kojiroSlide1").animate({"left":"-100vw", "opacity":"0"}, "slow");
-							$("#kojiroSlide2").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroArrowLeft").fadeIn("slow");	
-							$("#kojiroArrowRight").css('right', '0');
-							$("#kojiroTab1").css('background-color', 'transparent');
-							$("#kojiroTab2").css('background-color', '#6B6B6B');
-							break;
-
-							case 2:
-							$("#kojiroSlide2").animate({"left":"-200vw", "opacity":"0"}, "slow");
-							$("#kojiroSlide3").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroTab2").css('background-color', 'transparent');
-							$("#kojiroTab3").css('background-color', '#6B6B6B');
-							break;
-
-							case 3:
-							$("#kojiroSlide3").animate({"left":"-200vw", "opacity":"0"}, "slow");
-							$("#kojiroSlide4").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroTab3").css('background-color', 'transparent');
-							$("#kojiroTab4").css('background-color', '#6B6B6B');
-							break;
-
-							case 4:
-							$("#kojiroSlide4").animate({"left":"-200vw", "opacity":"0"}, "slow");
-							$("#kojiroSlide5").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroTab4").css('background-color', 'transparent');
-							$("#kojiroTab5").css('background-color', '#6B6B6B');
-							break;
-
-							case 5:
-							$("#kojiroSlide5").animate({"left":"-200vw", "opacity":"0"}, "slow");
-							$("#kojiroSlide6").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroTab5").css('background-color', 'transparent');
-							$("#kojiroTab6").css('background-color', '#6B6B6B');
-							break;
-
-							case 6:
-							$("#kojiroSlide6").animate({"left":"-200vw", "opacity":"0"}, "slow");
-							$("#kojiroSlide7").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroTab6").css('background-color', 'transparent');
-							$("#kojiroTab7").css('background-color', '#6B6B6B');
-							break;
-
-							case 7:
-							$("#kojiroSlide7").animate({"left":"-200vw", "opacity":"0"}, "slow");
-							$("#kojiroSlide8").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroTab7").css('background-color', 'transparent');
-							$("#kojiroTab8").css('background-color', '#6B6B6B');
-							break;
-
-							case 8:
-							$("#kojiroSlide8").animate({"left":"-200vw", "opacity":"0"}, "slow");
-							$("#kojiroSlide9").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroTab8").css('background-color', 'transparent');
-							$("#kojiroTab9").css('background-color', '#6B6B6B');
-							break;
-
-							case 9:
-							$("#kojiroSlide9").animate({"left":"-200vw", "opacity":"0"}, "slow");
-							$("#kojiroSlide10").animate({"left":"-100vw", "opacity":"100"}, "slow");
-							$("#kojiroArrowRight").fadeOut("slow");
-							$("#kojiroTab9").css('background-color', 'transparent');
-							$("#kojiroTab10").css('background-color', '#6B6B6B');
-							break;
-
-											}
-
-								kojiroswitch += 1;
-								$('body,html').scroll();
-
-							});
         
 
 			$('body,html').scroll();

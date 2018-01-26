@@ -107,9 +107,22 @@ h4 {
 #navigation {
 	position: fixed;
 	top: 50%;
-	left: 3.5em;
-	transform: rotate(90deg);
-	transform-origin: left top 0;
+	left: 3em;
+	transform: rotate(90deg) translateX(-50%);
+	transform-origin: left bottom 0;
+}
+
+.navLabel {
+	margin-right: 1em;
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5rem;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.navLabelOn {
+	border-bottom: thin solid #FFFFFF;
 }
 
 #tagline {
@@ -118,20 +131,6 @@ h4 {
 	right: 8em;
 	text-align: right;
 	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-.navLabel {
-	display: block;
-	font-family: 'Lato', sans-serif;
-	font-size: 1.5rem;
-	padding-right: 1.5em;
-	font-weight: normal;
-}
-
-.navLabelOn {
-	border-right: solid;
-	border-bottom: none;
-	font-weight: bold;
 }
 
 #aboveTheFoldImg {
