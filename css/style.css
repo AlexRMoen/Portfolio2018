@@ -144,6 +144,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151515', end
 	left: 3em;
 	transform: rotate(90deg) translateX(-50%);
 	transform-origin: left bottom 0;
+	z-index: 50;
 }
 
 .navLabel {
