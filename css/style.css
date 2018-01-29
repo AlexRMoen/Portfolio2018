@@ -54,9 +54,15 @@ h1 {
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 2rem;
 	font-family: 'Lato', sans-serif;
 	font-weight: normal;
+}
+
+@media (min-width: 576px) {
+	h2 {
+	font-size: 3rem;
+}
 }
 
 h3 {
