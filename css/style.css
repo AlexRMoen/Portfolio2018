@@ -74,6 +74,16 @@ h4 {
 	font-family: 'Lato', sans-serif;
 }
 
+.bigText {
+	font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+	.bigText {
+	font-size: 1.25rem;
+}
+}
+
 /* buttons */
 .btn {
 	-webkit-border-radius: 28;
@@ -112,7 +122,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a151515', e
 
 /* paddings */
 .paddingLeftRight {
-    padding-left: 4em;
+    padding-left: 5em;
 	padding-right: 1em;
 }
 
@@ -257,6 +267,72 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151515', end
 	bottom: 1em;
 	right: 5em;
 	text-align: right;
+}
+
+#whatIDo {
+	width: 100%;
+	margin-top: 2em;
+	position: relative;
+	padding-left: 0;
+	padding-right: 0;
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 576px) {
+	#whatIDo {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+}
+
+.profilePic {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	width: 50%;
+	height: 35%;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+@media (min-width: 576px) {
+	.profilePic {
+	top: 50%;
+	left: 50%;
+	width: 40%;
+	height: 70%;
+	transform: translate(-50%, -50%);
+}
+}
+
+.whatIDoItemLeft {
+	width: 55%;
+	margin-left: auto;
+	margin-top: 2em;
+}
+
+.whatIDoItemRight {
+	width: 55%;
+	margin-left: auto;
+	margin-top: 2em;
+}
+
+@media (min-width: 576px) {
+	.whatIDoItemLeft {
+	width: 40%;
+	margin-left: 0;
+	margin-right: auto;
+	margin-top: auto;
+}
+
+.whatIDoItemRight {
+	width: 40%;
+	margin-left: auto;
+	margin-right: 0;
+	margin-top: auto;
+}
 }
 
 .projectLink {
