@@ -99,8 +99,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a151515', e
 }
 
 /* paddings */
-.paddingTop2em {
-	padding-top: 2em;
+.paddingLeftRight {
+    padding-left: 4em;
+	padding-right: 1em;
+}
+
+@media (min-width: 576px) {
+	.paddingLeftRight {
+    padding-left: 18%;
+	padding-right: 10%;
+	}
 }
 
 /* positions */
@@ -141,19 +149,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151515', end
 #navigation {
 	position: fixed;
 	top: 50%;
-	left: 3em;
+	left: 1em;
 	transform: rotate(90deg) translateX(-50%);
 	transform-origin: left bottom 0;
 	z-index: 50;
+}
+
+@media (min-width: 576px) {
+	#navigation {
+	left: 3em;
+}
 }
 
 .navLabel {
 	margin-right: 1em;
 	display: inline-block;
 	font-family: 'Lato', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-weight: normal;
 	text-decoration: none;
+}
+
+@media (min-width: 576px) {
+	.navLabel {
+    font-size: 1.5rem;
+	}
 }
 
 .navLabelOn {
@@ -197,7 +217,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151515', end
 	padding-bottom: 0;
 	height: 65vh;
 	width: 100%;
-	padding-left: 18%;
 	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
