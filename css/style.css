@@ -342,6 +342,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151515', end
 }
 
 .projectLink {
+	padding-right: 0;
 	padding-top: 20vh;
 	padding-bottom: 0;
 	height: 65vh;
